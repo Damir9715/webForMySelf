@@ -1,0 +1,17 @@
+<div class="col s3">
+  <div class="card">
+    <div class="card-image">
+      <img src="{{ user.picture.large }}">
+      <span class="card-title">{{ user.name.first | uppercase}}</span>
+    </div>
+    <div class="card-content">
+      <p>{{ user.location.city }}</p>
+    </div>
+    <div class="card-action">
+      <a
+        class="waves-effect waves-light btn"
+        (click)="onClick()"
+      >Click</a>
+    </div>
+  </div>
+</div>
